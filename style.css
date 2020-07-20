@@ -1,0 +1,213 @@
+/* css RESET */
+*{
+    padding: 0px;
+    margin: -3px;
+
+}
+/* Navbar Style */
+#navbar{
+    top: 0px;
+    bottom: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* justify-content: center; */
+
+}
+#navbar::before{
+    top: 0px;
+    content: "";
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+/* Navbar: Logo and image  */
+#navbar ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Bree Serif', serif;
+}
+#navbar li a{
+    color: black;
+    padding: 5px 5px;
+    margin: 32px;
+    text-decoration: none;
+} 
+#navbar a{
+    color: white;
+    font-size: 1.3rem;
+    
+}
+#navbar a:hover{
+   color: black;
+   
+   background-color:wheat;
+   border: 2px solid black;
+   border-radius: 8px;
+   width: 50px;
+   padding: 3px;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    display: block;
+    background:url('../vegetables.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;}
+    #home h1{
+        font-family: 'Bree Serif', serif;
+    }
+    #home p{
+        color: white;
+    }
+    /* services class */
+    .services-container{
+        height: 100px;
+
+    }
+    #services {
+        display: flex;
+        padding: 10px;
+        margin: 70px auto;
+        justify-content: center;
+    }
+    #services .box{
+        /* display: flex; */
+        border: 2px solid rebeccapurple;
+        background-color: rgb(240, 238, 241);
+        border-radius: 20px;
+        height:30%;
+        width: 350px;
+        /* padding: 4px 30px; */
+        margin: 10px;
+    }
+  #services .box img{
+      display: block;
+      width: 350px;
+      height: 300px;
+      margin: auto;
+  }
+  .text{
+      /* display: flex; */
+      margin: auto;
+      justify-content: center;
+      text-align: center;
+
+  }
+  .h-secondary{
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      text-align: center;
+
+  }
+
+  #clients{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     height: 80px;
+  }
+  .c-heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.2rem;
+  }
+  .client-items img{
+    height: 130px;
+    padding: 10px;
+  }
+  #client-section::before{
+      content: "";
+      background:url('../cl.jpg') no-repeat center center/cover;
+      height: 70%;
+      width: 100%;
+      opacity: 0.4;
+      z-index: -1;
+  }
+    /* utility class */
+    .h-primary{
+        /* font-family: 'Baloo Bhaina 2', cursive; */
+        font-size: 3.8rem;
+        color: white;
+    }
+    .h1-primary{
+        display: flex;
+        font-size: 4.5rem;
+        margin: 95px;
+        justify-content: center;
+        height: 0px;
+    }
+    
+    .btn{
+        background-color: lightgreen;
+        border: 2px solid black;
+        border-radius: 8px;                    
+       display: block;
+       margin: 17px;
+       padding: 7px 20px;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        cursor: pointer;
+        
+
+       }
+       .btn:hover{
+           background-color: green;
+
+       }
+       #back{
+           background: url('../cl.jpg') no-repeat center center/cover;
+           height: 270px;
+           /* opacity: 0.4;
+           z-index: -1; */
+       }
+       /* Contact section  */
+    #contact .h-contact{
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+        justify-content: center;
+        height: 180px;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+    }
+    #contact-box .contact-group{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        float: inherit;
+    }
+    form .contact-group {
+        padding: 2px;
+        margin: 2px 4px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        position: relative;
+        opacity: 0.7;
+    }
